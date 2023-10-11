@@ -1,0 +1,208 @@
+# home-page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exp2.css">
+    <title>Top innovations of 2023</title>
+    
+</head>
+<body>
+   
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="innovation.mp4" type="video/mp4">
+  </video>
+  <div class="menu-nav">
+    <div class="menu-item">HOME</div>
+    <div class="menu-item">NEWS</div>
+    <div class="menu-item">SERVICE</div>
+    <div class="menu-item">CONTACT</div>
+    <div class="menu-item">ABOUT US</div>
+    <div class="menu-item">FAQ</div>
+    <div class="dropdown-container" tabindex="-1">
+      <div class="three-dots"></div>
+      <div class="dropdown">
+        <a href="#"><div>click here for a scam</div></a>
+        <a href="#"><div>even more scams</div></a>
+        <a href="#"><div>still some money left?</div></a>
+      </div>
+    </div>
+  </div>
+    <form>
+        <div class="user">
+        <h2 ><em style="color:brown;">ARE YOU A TECHNOPHILE ? </em></h2>
+        
+        <input  type="email" placeholder="Enter you mail ID"><br>
+       
+        <input  type="password" placeholder="Enter your password"><br><br>
+        <div class="submtbtn">
+        <input type="submit" name="Submit" value="Login">
+    </div>
+</div>
+
+    </form>
+</body>
+</html >
+
+CSS CODE
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .menu-nav {
+    background-color: rgba(0, 0, 0, 0.532);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .menu-item {
+    color: #FCC;
+    padding: 3px;
+  }
+  
+  .three-dots:after {
+    cursor: pointer;
+    color: #FCC;
+    content: '\2807';
+    font-size: 20px;
+    padding: 0 5px;
+    position: fixed;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a div {
+    padding: 2px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 10px;
+    background-color: #66D;
+    box-shadow: 0px 0px 3px 3px #66D;
+    outline: none;
+    opacity: 0;
+    z-index: -1;
+    max-height: 0;
+    transition: opacity 0.1s, z-index 0.1s, max-height: 5s;
+  }
+  
+  .dropdown-container:focus {
+    outline: none;
+  }
+  
+  .dropdown-container:focus .dropdown {
+    opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
+    transition: opacity 0.2s, z-index 0.2s, max-height: 0.2s;
+  }
+.signup,.login,.user{
+    width: 80%;
+    margin-left: 150px;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.27);    
+}
+
+.user{
+    top: 60%;
+}
+.loginform,.usr{
+    margin-left: 30px;
+}
+h3{
+    margin-left: 20px;
+}
+h2{
+    text-align: center;
+}
+input[type=submit]{
+    background-color: rgba(110, 5, 5, 0.951);
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgba(110, 5, 5, 0.951);
+    border-radius: 10px;
+    width: 35%;
+}
+.submtbtn{
+    text-align: center;
+}
+input[type=email]{
+    text-align: center;
+    border: 2px solid rgba(110, 5, 5, 0.951);
+    border-radius: 50px;
+    margin-left: 110px;  
+}
+input[type=password]{
+    text-align: center;
+    border: 2px solid rgba(110, 5, 5, 0.951);
+    border-radius: 50px;
+    margin-left: 110px;  
+}
+h1,p{
+    text-align: center;
+    font-weight: 1200;
+}
+h6{
+    font-size: 15px;  
+    margin-left: 20px;
+}
+form{
+    width: 500px;
+    margin-left: 20px;
+    font-size: 15px;
+    position: bottom;
+    /* margin-left: 120px; */
+}
+form input{
+
+    width: 80%;
+    padding: 10px;
+   
+
+
+   border: rgb(161, 4, 4); 
+    border-style: solid;
+    margin-bottom: 9px;
+    margin-top: 10px;
+    font-size: 15px;
+}
